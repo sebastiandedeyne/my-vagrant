@@ -65,10 +65,10 @@ sudo apt-get install -y nodejs
 echo "--- Installing our global node packages ---"
 sudo npm install gulp -g
 sudo npm install bower -g
-sudo npm install coffee -g
+sudo npm install coffee-script -g
 
 echo "--- Installing RVM ---"
-\curl -L https://get.rvm.io | bash -s stable
+curl -L https://get.rvm.io | bash -s stable
 
 echo "--- Loading RVM ---"
 source ~/.rvm/scripts/rvm
@@ -84,4 +84,4 @@ echo "--- Installing Rubygems ---"
 rvm rubygems current
 
 echo "--- Installing our gems ---"
-sudo gem install sass compass foreman
+sudo gem install sass compass foreman jekyll
